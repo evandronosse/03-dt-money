@@ -3,15 +3,15 @@ import styled from 'styled-components'
 export const TransactionsContainer = styled.main`
   width: 100%;
   max-width: 1128px;
-  margin: 4rem auto 0;
+  margin: 2rem auto 0;
   padding: 0 1.5rem;
 `
 export const TransactionsTable = styled.table`
   width: 100%;
   border-collapse: separate;
   border-spacing: 0 0.5rem;
-  margin-top: 1.5rem;
-
+  margin-top: 0;
+  overflow-x: auto;
   td {
     padding: 1.25rem 2rem;
     background: ${(props) => props.theme['gray-700']};
@@ -23,6 +23,7 @@ export const TransactionsTable = styled.table`
     &:last-child {
       border-top-right-radius: 6px;
       border-bottom-right-radius: 6px;
+      cursor: pointer;
     }
   }
 `
@@ -34,4 +35,11 @@ export const PriceHighlight = styled.span<PriceHighlightProps>`
     props.variant === 'income'
       ? props.theme['green-300']
       : props.theme['red-300']};
+`
+export const TableScrollDesign = styled.div`
+  height: 16rem;
+  overflow: auto;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `
