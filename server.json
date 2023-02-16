@@ -23,6 +23,22 @@
       "category": "Carro",
       "price": 340,
       "createdAt": "2022-07-29T19:30:44.505Z"
+    },
+    {
+      "description": "Desenvolvimento App",
+      "price": 2000,
+      "category": "Job",
+      "type": "income",
+      "createdAt": "2023-02-16T13:34:19.871Z",
+      "id": 4
+    },
+    {
+      "description": "Faculdade",
+      "price": 149,
+      "category": "Estudo",
+      "type": "outcome",
+      "createdAt": "2023-02-16T13:48:49.639Z",
+      "id": 5
     }
   ]
 }
